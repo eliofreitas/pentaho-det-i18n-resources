@@ -8,97 +8,115 @@ pentaho-det-impl-core.pen-det-app.dialog.server-error.cancel=Close
 ## pen-det-notifications component
 pentaho-det-impl-core.pen-det-notification.canvas.header=Just a moment
 pentaho-det-impl-core.pen-det-notification.canvas.message=We\u0027re putting things in place.
-pentaho-det-impl-core.pen-det-notification.overlay.message=Updating your visualization...
 pentaho-det-impl-core.pen-det-notification.canvas.nodata.header=No data available
 pentaho-det-impl-core.pen-det-notification.canvas.nodata.message=We can\u0027t inspect this step because it generated no data.
 pentaho-det-impl-core.pen-det-notification.canvas.nodata.primary.btn=Return to the transformation
-pentaho-det-impl-core.pen-det-notification.overlay.aggregation-limit.message=There are too many data points. We are only showing the first {limitValue}.
-pentaho-det-impl-core.pen-det-notification.canvas.error.message=Add fields to the layout zones.
-pentaho-det-impl-core.pen-det-notification.canvas.error.header=Unable to render
-pentaho-det-impl-core.pen-det-notification.canvas.error.all-zero-data.message=Please choose a measure field which contains some non-zero values.
-pentaho-det-impl-core.pen-det-notification.canvas.error.visual-elems-count-max.message=Please remove some fields to simplify the chart.
-pentaho-det-impl-core.pen-det-notification.nodata.header=No data available
-pentaho-det-impl-core.pen-det-notification.nodata.message=The selections did not generate any data.
-pentaho-det-impl-core.pen-det-notification.invalid-tab.header=Unable to render
-pentaho-det-impl-core.pen-det-notification.invalid-tab.message=Verify your selections and try again.
+pentaho-det-impl-core.pen-det-notification.error.canvas.all-zero-data.message=Please choose a measure field which contains some non-zero values.
+pentaho-det-impl-core.pen-det-notification.error.canvas.visual-elems-count-max.message=Please remove some fields to simplify the chart.
+
+## notification utils
+pentaho-det-impl-core.notifications.invalid_selections.header=Unable to render
+pentaho-det-impl-core.notifications.invalid_selections.message=Verify your selections and try again.
+pentaho-det-impl-core.notifications.general_error.message=Add fields to the layout zones.
+pentaho-det-impl-core.notifications.general_error.header=Unable to render
+pentaho-det-impl-core.notifications.limit_warning.message=There are too many data points. We are only showing the first {limitValue}.
+pentaho-det-impl-core.notifications.no_data.header=No data available
+pentaho-det-impl-core.notifications.no_data.message=The selections did not generate any data.
+pentaho-det-impl-core.notifications.loading_data.header=Just a moment
+pentaho-det-impl-core.notifications.loading_data.message=We\u0027re putting things in place.
+pentaho-det-impl-core.notifications.updating_data.message=Updating your visualization...
+pentaho-det-impl-core.notifications.debounced_loading_data.header=Just a moment
+pentaho-det-impl-core.notifications.debounced_loading_data.message=We\u0027re putting things in place.
+pentaho-det-impl-core.notifications.debounced_updating_data.message=Updating your visualization...
+pentaho-det-impl-core.notifications.general_message.header=Unable to render.
+pentaho-det-impl-core.notifications.general_message.message=Add fields to the layout zones.
+
+## pen-det-fields-panel component
+pentaho-det-impl-core.pen-det-fields-panel.clear-all.label=Clear All
+pentaho-det-impl-core.pen-det-fields-panel.select-all.label=Select All
+pentaho-det-impl-core.pen-det-fields-panel.list-selector.empty.msg=No results
+
+## pen-det-parameters-panel component
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.layout.label=Layout
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.label=Filters
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.empty.msg=Add a field to create a filter.
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.invalid.msg=Invalid field or filter option.
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.hover.msg=Add at least a non-measure field to the layout zones.
+pentaho-det-impl-core.pen-det-parameters-panel.drop-zone.empty-numeric.msg=Add a numeric field.
+pentaho-det-impl-core.pen-det-parameters-panel.drop-zone.empty-numeric-time.msg=Add a numeric or date field.
+pentaho-det-impl-core.pen-det-parameters-panel.drop-zone.empty-time.msg=Add a date field.
+pentaho-det-impl-core.pen-det-parameters-panel.drop-zone.empty-measure.msg=Add a measure field.
+pentaho-det-impl-core.pen-det-parameters-panel.drop-zone.empty-non-measure.msg=Add a non-measure field.
+pentaho-det-impl-core.pen-det-parameters-panel.drop-zone.empty-any.msg=Add any field.
 
 ## pen-det-configurable-visualization component
-pentaho-det-impl-core.pen-det-configurable-visualization.fields-panel.clear-all.label=Clear All
-pentaho-det-impl-core.pen-det-configurable-visualization.fields-panel.select-all.label=Select All
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.layout.label=Layout
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.label=Filters
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.empty.msg=Add a field to create a filter.
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.invalid.msg=Invalid field or filter option.
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.hover.msg=Add at least a non-measure field to the layout zones.
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-zone.empty-numeric.msg=Add a numeric field.
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-zone.empty-numeric-time.msg=Add a numeric or date field.
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-zone.empty-measure.msg=Add a measure field.
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-zone.empty-non-measure.msg=Add a non-measure field.
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-zone.empty-any.msg=Add any field.
-pentaho-det-impl-core.pen-det-configurable-visualization.list-selector.empty.msg=No results
 pentaho-det-impl-core.pen-det-configurable-visualization.double-click.tooltip.msg=Double-click to drill down
 
-## pen-det-configurable-visualization-filter-summaries
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.multiple.single.selection.label=1 selection
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.multiple.multiple.selections.label={selectionCount} selections
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.all.label=All
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.drill_down.label={formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.keep_only.label=Keep Only {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.exclude.label=Exclude {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.keep_only.multiple.label=Keep Only ({fieldsLabel}) where {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.exclude.multiple.label=Exclude ({fieldsLabel}) where {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.or.separator.label=\u0020or\u0020
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.select.label=Select
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.null.label=Show only Nulls
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.not_null.label=Exclude Nulls
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_gt.label=> {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_gte.label=\u2265 {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_lt.label=< {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_lte.label=\u2264 {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_eq.label=\u003D {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_not_eq.label=\u2260 {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.string_eq.label=\u003D {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.string_not_eq.label=\u2260 {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.contain.label=Contains "{formattedValue}"
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.not_contain.label=Does not contain "{formattedValue}"
+## pen-det-parameters-panel component filter summaries
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.multiple.single.selection.label=1 selection
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.multiple.multiple.selections.label={selectionCount} selections
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.all.label=All
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.drill_down.label={formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.keep_only.label=Keep Only {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.exclude.label=Exclude {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.keep_only.multiple.label=Keep Only ({fieldsLabel}) where {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.exclude.multiple.label=Exclude ({fieldsLabel}) where {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.or.separator.label=\u0020or\u0020
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.select.label=Select
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.null.label=Show only Nulls
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.not_null.label=Exclude Nulls
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_gt.label=> {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_gte.label=\u2265 {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_lt.label=< {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_lte.label=\u2264 {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_eq.label=\u003D {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_not_eq.label=\u2260 {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.string_eq.label=\u003D {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.string_not_eq.label=\u2260 {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.contain.label=Contains "{formattedValue}"
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.not_contain.label=Does not contain "{formattedValue}"
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.nullvalue.label=Not Available
 
-## pen-det-configurable-visualization-filter-summaries-tooltips
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_gt.tooltip=Greater than {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_gte.tooltip=Greater than or equal to {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_lt.tooltip=Less than {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_lte.tooltip=Less than or equal to {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_eq.tooltip=Equals to {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.numeric_not_eq.tooltip=Does not equal to {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.string_eq.tooltip=Equals to {formattedValue}
-pentaho-det-impl-core.pen-det-configurable-visualization.drop-panel.filters.summary.string_not_eq.tooltip=Does not equal to {formattedValue}
+## pen-det-parameters-panel component filter summaries tooltips
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_gt.tooltip=Greater than {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_gte.tooltip=Greater than or equal to {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_lt.tooltip=Less than {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_lte.tooltip=Less than or equal to {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_eq.tooltip=Equals to {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.numeric_not_eq.tooltip=Does not equal to {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.string_eq.tooltip=Equals to {formattedValue}
+pentaho-det-impl-core.pen-det-parameters-panel.drop-panel.filters.summary.string_not_eq.tooltip=Does not equal to {formattedValue}
+
+## pen-det-selections-panel - confirmation dialog to remove filter
+pentaho-det-impl-core.pen-det-selections-panel.dialog.remove-filter.header=Are you sure?
+pentaho-det-impl-core.pen-det-selections-panel.dialog.remove-filter.measures-body=Changing visualization will clear the filters on measures.
+pentaho-det-impl-core.pen-det-selections-panel.dialog.remove-filter.measures-pivot-body=Changing to the Pivot Table will clear all the "Keep Only", "Exclude" and filters on measures.
+pentaho-det-impl-core.pen-det-selections-panel.dialog.remove-filter.accept=Change
+pentaho-det-impl-core.pen-det-selections-panel.dialog.remove-filter.cancel=Cancel
 
 ## pen-det-tab component
 pentaho-det-impl-core.pen-det-tab.pen-det-mode-selector.stream-mode.label=Stream View
 pentaho-det-impl-core.pen-det-tab.pen-det-mode-selector.model-mode.label=Model View
-pentaho-det-impl-core.pen-det-configurable-visualization.dialog.remove-filter-measures.header=Are you sure?
-pentaho-det-impl-core.pen-det-configurable-visualization.dialog.remove-filter-measures.body=Changing visualization will clear the filters on measures.
-pentaho-det-impl-core.pen-det-configurable-visualization.dialog.remove-filter-measures.accept=Remove
-pentaho-det-impl-core.pen-det-configurable-visualization.dialog.remove-filter-measures.cancel=Cancel
 
-## pen-det-tab component contextual menu
+## pen-det-tab component - contextual menu
 pentaho-det-impl-core.pen-det-tab.pen-det-contextual-menu.label=Available actions
 pentaho-det-impl-core.pen-det-tab.pen-det-contextual-menu.keep-only.label=Keep Only
 pentaho-det-impl-core.pen-det-tab.pen-det-contextual-menu.exclude.label=Exclude
-pentaho-det-impl-core.pen-det-tab.pen-det-contextual-menu.drill-down-to.label=Drill down to {dimension}
+pentaho-det-impl-core.pen-det-tab.pen-det-contextual-menu.drill-down-to.label=Drill down on {dimension}
 
-## pen-det-tab - confirmation dialog to switch mode
-pentaho-det-impl-core.pen-det-tab.dialog.switch-mode-conf.header=Are you sure?
-pentaho-det-impl-core.pen-det-tab.dialog.switch-mode-conf.model-body=Switching to model view will clear all selections.
-pentaho-det-impl-core.pen-det-tab.dialog.switch-mode-conf.stream-body=Switching to stream view will clear all selections.
-pentaho-det-impl-core.pen-det-tab.dialog.switch-mode-conf.model-accept=Switch to Model View
-pentaho-det-impl-core.pen-det-tab.dialog.switch-mode-conf.stream-accept=Switch to Stream View
-pentaho-det-impl-core.pen-det-tab.dialog.switch-mode-conf.cancel=Cancel
+## pen-det-selections-panel - confirmation dialog to switch mode
+pentaho-det-impl-core.pen-det-selections-panel.dialog.switch-mode-conf.header=Are you sure?
+pentaho-det-impl-core.pen-det-selections-panel.dialog.switch-mode-conf.model-body=Switching to model view will clear all selections.
+pentaho-det-impl-core.pen-det-selections-panel.dialog.switch-mode-conf.stream-body=Switching to stream view will clear all selections.
+pentaho-det-impl-core.pen-det-selections-panel.dialog.switch-mode-conf.model-accept=Switch to Model View
+pentaho-det-impl-core.pen-det-selections-panel.dialog.switch-mode-conf.stream-accept=Switch to Stream View
+pentaho-det-impl-core.pen-det-selections-panel.dialog.switch-mode-conf.cancel=Cancel
 
-## pen-det-configurable-visualization - confirmation dialog to deselect/remove field
-pentaho-det-impl-core.pen-det-configurable-visualization.dialog.remove-field-conf.header=Are you sure?
-pentaho-det-impl-core.pen-det-configurable-visualization.dialog.remove-field-conf.body=Removing all non-measure fields will also clear the filters on measures.
-pentaho-det-impl-core.pen-det-configurable-visualization.dialog.remove-field-conf.accept=Remove
-pentaho-det-impl-core.pen-det-configurable-visualization.dialog.remove-field-conf.cancel=Cancel
+## pen-det-parameters-panel - confirmation dialog to deselect/remove field
+pentaho-det-impl-core.pen-det-parameters-panel.dialog.remove-field-conf.header=Are you sure?
+pentaho-det-impl-core.pen-det-parameters-panel.dialog.remove-field-conf.body=Removing all non-measure fields will also clear the filters on measures.
+pentaho-det-impl-core.pen-det-parameters-panel.dialog.remove-field-conf.accept=Remove
+pentaho-det-impl-core.pen-det-parameters-panel.dialog.remove-field-conf.cancel=Cancel
 
 ## scrollable-tabset directive
 pentaho-det-impl-core.scrollable-tabset.contextmenu.delete.label=Delete
@@ -119,8 +137,6 @@ pentaho-det-impl-core.pen-det-filter-prompt.filter-type.show_only.label=Show onl
 pentaho-det-impl-core.pen-det-filter-prompt.filter-type.exclude.label=Exclude
 pentaho-det-impl-core.pen-det-filter-prompt.filter-type.is_greater.label=Greater than
 pentaho-det-impl-core.pen-det-filter-prompt.filter-type.is_less.label=Less than
-pentaho-det-impl-core.pen-det-filter-prompt.filter-type.g_or_equal_to.label=or equal to
-pentaho-det-impl-core.pen-det-filter-prompt.filter-type.l_or_equal_to.label=or equal to
 pentaho-det-impl-core.pen-det-filter-prompt.filter-type.value.label=Value
 pentaho-det-impl-core.pen-det-filter-prompt.filter-type.numeric_eq.label=Equals
 pentaho-det-impl-core.pen-det-filter-prompt.filter-type.numeric_not_eq.label=Does not equal
@@ -129,5 +145,6 @@ pentaho-det-impl-core.pen-det-filter-prompt.filter-type.string_not_eq.label=Does
 pentaho-det-impl-core.pen-det-filter-prompt.filter-type.contain.label=Contains
 pentaho-det-impl-core.pen-det-filter-prompt.filter-type.not_contain.label=Does not contain
 pentaho-det-impl-core.pen-det-filter-prompt.input.number.help-message=Values must be numbers.
+pentaho-det-impl-core.pen-det-filter-prompt.apply.btn=Apply
 pentaho-det-impl-core.pen-det-filter-prompt.cancel.btn=Cancel
-submitButtonLabel=Apply
+pentaho-det-impl-core.pen-det-filter-prompt.is_equal.checkbox=or equal to
